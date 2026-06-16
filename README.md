@@ -208,7 +208,7 @@ This project is intended for educational, portfolio, and research purposes.
 *Engineering Student | AI Enthusiast | Full Stack Developer*
 
 * **GitHub:** [@Anandhu0724](https://github.com/Anandhu0724)
-* **LinkedIn:** [Anandhu's Profile](https://www.linkedin.com/in/anandhu-krishnan-seo-dev) *(Update with your link)*
+* **LinkedIn:** [Anandhu's Profile](https://www.linkedin.com/in/anandhu0724/)
 
 ---
 *⭐ If you found this project helpful, feel free to give it a star!*
