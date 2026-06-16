@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* High-contrast Dark Mode specifically designed for long-form SEO editing */
+.dark-mode {
+  background-color: #0b0f19 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Header adapts to a sleek dark container */
+.dark-mode header,
+.dark-mode #seo-strategist-app header {
+  background-color: #111622 !important;
+  border-color: #1e293b !important;
+}
+
+.dark-mode header span {
+  color: #f8fafc !important;
+}
+
+.dark-mode header span.opacity-50 {
+  opacity: 0.65;
+  color: #94a3b8 !important;
+}
+
+/* Sub-panels and white cards adapt */
+.dark-mode .bg-white,
+.dark-mode #theme-btn-editorial {
+  background-color: #111622 !important;
+  color: #cbd5e1 !important;
+  border-color: #24334c !important;
+}
+
+.dark-mode .bg-[#FAFAF9],
+.dark-mode .bg-slate-50,
+.dark-mode .bg-slate-100/50,
+.dark-mode .bg-zinc-50 {
+  background-color: #0b0f19 !important;
+  color: #cbd5e1 !important;
+}
+
+.dark-mode .shadow-sm,
+.dark-mode .shadow-md,
+.dark-mode .shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.45), 0 2px 4px -2px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Borders conversion to clean navy-slate */
+.dark-mode .border,
+.dark-mode .border-[#111827]/10,
+.dark-mode .border-[#111827]/5,
+.dark-mode .border-slate-200,
+.dark-mode .border-zinc-200,
+.dark-mode .border-slate-100 {
+  border-color: #24334c !important;
+}
+
+/* Sidebar and containers general background mapping */
+.dark-mode aside, 
+.dark-mode .bg-white.aside-panel,
+.dark-mode #seo-strategist-app aside {
+  background-color: #111622 !important;
+  border-color: #24334c !important;
+}
+
+/* Form Headings & text fields */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode .text-slate-900,
+.dark-mode .text-zinc-900,
+.dark-mode .text-[#111827],
+.dark-mode strong {
+  color: #f8fafc !important;
+}
+
+.dark-mode p,
+.dark-mode .text-slate-500,
+.dark-mode .text-slate-600,
+.dark-mode .text-zinc-500,
+.dark-mode .text-gray-500,
+.dark-mode .text-[#111827]/60,
+.dark-mode .text-[#1A1A1A]/70,
+.dark-mode .text-[#1A1A1A]/50 {
+  color: #94a3b8 !important;
+}
+
+/* Labels and tags */
+.dark-mode label,
+.dark-mode .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+/* Inputs, textareas & select options */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #0b111e !important;
+  border-color: #24334c !important;
+  color: #f1f5f9 !important;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode select:focus {
+  border-color: #f97316 !important;
+  outline: none;
+}
+
+/* Highlight boxes (Info/Warning/Tips) */
+.dark-mode .bg-amber-50,
+.dark-mode .bg-amber-500/10 {
+  background-color: #2a1f0a !important;
+  border-color: #45300f !important;
+  color: #fde047 !important;
+}
+
+.dark-mode .text-amber-800,
+.dark-mode .text-amber-700 {
+  color: #fbbf24 !important;
+}
+
+.dark-mode .bg-indigo-50,
+.dark-mode .bg-indigo-50/50,
+.dark-mode .bg-indigo-500/10 {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+  color: #38bdf8 !important;
+}
+
+.dark-mode .text-indigo-800,
+.dark-mode .text-indigo-600 {
+  color: #60a5fa !important;
+}
+
+.dark-mode .bg-rose-50,
+.dark-mode .bg-rose-50/50 {
+  background-color: #2a0f12 !important;
+  border-color: #4c111c !important;
+  color: #fca5a5 !important;
+}
+
+/* Workspace navigation tabs inside header */
+.dark-mode header button {
+  color: #94a3b8 !important;
+}
+
+.dark-mode header button:hover {
+  background-color: #141b29 !important;
+  color: #cbd5e1 !important;
+}
+
+.dark-mode header button.bg-[#111827] {
+  background-color: #f97316 !important;
+  color: #ffffff !important;
+}
+
+/* Cards containing articles and outlines inside article workspaces */
+.dark-mode .border-dashed {
+  border-style: dashed;
+  border-color: #334155 !important;
+}
+
+/* D3 and Recharts dark mode updates */
+.dark-mode #competitor-gap-container {
+  background-color: #111622 !important;
+  border-color: #24334c !important;
+}
+
+.dark-mode #competitor-gap-container .border-slate-100 {
+  border-color: #1e293b !important;
+}
+
+.dark-mode #competitor-gap-container .bg-slate-50 {
+  background-color: #0b0f19 !important;
+  border-color: #1e293b !important;
+}
+
+.dark-mode #competitor-gap-container .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark-mode #competitor-gap-container .row-line {
+  stroke: #1e293b !important;
+}
+
+.dark-mode #competitor-gap-container .tick line {
+  stroke: #24334c !important;
+}
+
+.dark-mode #theme-toggler {
+  background-color: #0b0f19 !important;
+  border-color: #24334c !important;
+}
+
