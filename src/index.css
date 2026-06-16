@@ -53,9 +53,9 @@
   border-color: #24334c !important;
 }
 
-.dark-mode .bg-[#FAFAF9],
+.dark-mode .bg-\[\#FAFAF9\],
 .dark-mode .bg-slate-50,
-.dark-mode .bg-slate-100/50,
+.dark-mode .bg-slate-100\/50,
 .dark-mode .bg-zinc-50 {
   background-color: #0b0f19 !important;
   color: #cbd5e1 !important;
@@ -69,8 +69,8 @@
 
 /* Borders conversion to clean navy-slate */
 .dark-mode .border,
-.dark-mode .border-[#111827]/10,
-.dark-mode .border-[#111827]/5,
+.dark-mode .border-\[\#111827\]\/10,
+.dark-mode .border-\[\#111827\]\/5,
 .dark-mode .border-slate-200,
 .dark-mode .border-zinc-200,
 .dark-mode .border-slate-100 {
@@ -94,7 +94,7 @@
 .dark-mode h6,
 .dark-mode .text-slate-900,
 .dark-mode .text-zinc-900,
-.dark-mode .text-[#111827],
+.dark-mode .text-\[\#111827\],
 .dark-mode strong {
   color: #f8fafc !important;
 }
@@ -104,9 +104,9 @@
 .dark-mode .text-slate-600,
 .dark-mode .text-zinc-500,
 .dark-mode .text-gray-500,
-.dark-mode .text-[#111827]/60,
-.dark-mode .text-[#1A1A1A]/70,
-.dark-mode .text-[#1A1A1A]/50 {
+.dark-mode .text-\[\#111827\]\/60,
+.dark-mode .text-\[\#1A1A1A\]\/70,
+.dark-mode .text-\[\#1A1A1A\]\/50 {
   color: #94a3b8 !important;
 }
 
@@ -134,7 +134,7 @@
 
 /* Highlight boxes (Info/Warning/Tips) */
 .dark-mode .bg-amber-50,
-.dark-mode .bg-amber-500/10 {
+.dark-mode .bg-amber-500\/10 {
   background-color: #2a1f0a !important;
   border-color: #45300f !important;
   color: #fde047 !important;
@@ -146,8 +146,8 @@
 }
 
 .dark-mode .bg-indigo-50,
-.dark-mode .bg-indigo-50/50,
-.dark-mode .bg-indigo-500/10 {
+.dark-mode .bg-indigo-50\/50,
+.dark-mode .bg-indigo-500\/10 {
   background-color: #0f172a !important;
   border-color: #1e293b !important;
   color: #38bdf8 !important;
@@ -159,7 +159,7 @@
 }
 
 .dark-mode .bg-rose-50,
-.dark-mode .bg-rose-50/50 {
+.dark-mode .bg-rose-50\/50 {
   background-color: #2a0f12 !important;
   border-color: #4c111c !important;
   color: #fca5a5 !important;
@@ -175,7 +175,7 @@
   color: #cbd5e1 !important;
 }
 
-.dark-mode header button.bg-[#111827] {
+.dark-mode header button.bg-\[\#111827\] {
   background-color: #f97316 !important;
   color: #ffffff !important;
 }
