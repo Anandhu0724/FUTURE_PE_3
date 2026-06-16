@@ -43,13 +43,13 @@ Instead of generating random articles, it maps out complete topical systems:
 ## 📸 Screenshots & Demos
 
 ### 🎥 Project Demonstration
-* **Demo Video:** [Google Drive Demonstration Link](https://drive.google.com/file/d/1X5ZtYgU2X75Yv7RSYhw1jVgUeiW/view) *(Replace with your actual link)*
+* **Demo Video:** [Google Drive Demonstration Link](https://drive.google.com/file/d/1HOfx37h0UuMsjDHjC2RFO5xRX6yRUms7/view?usp=sharing)
 
 ### 🖥️ Dashboard & Features Preview
 
 | Local SEO Proximity Radar | SEO CTR Meta Suite |
 | :---: | :---: |
-| ![Local SEO](screenshots/local-seo.png) | ![SEO Blueprint](screenshots/blueprint.png) |
+| ![Local SEO](https://github.com/user-attachments/assets/78cecce3-adbe-4809-b430-71c650f2754d) | ![SEO Blueprint](https://github.com/user-attachments/assets/04c4bcf2-f790-4575-8111-aac329162151) |
 
 ---
 
