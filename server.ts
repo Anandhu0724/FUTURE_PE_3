@@ -684,26 +684,30 @@ Please evaluate structural issues, keyword count, readability tone, semantic key
 
 // FRONTEND EMBEDDING AND DEV VITE ENGINE SERVER
 
-// Vite middleware for development
-if (process.env.NODE_ENV !== "production") {
-  import("vite").then(async (Vite) => {
-    const vite = await Vite.createServer({
-      server: { middlewareMode: true },
-      appType: "spa",
+if (!process.env.VERCEL) {
+  // Vite middleware for development
+  if (process.env.NODE_ENV !== "production") {
+    import("vite").then(async (Vite) => {
+      const vite = await Vite.createServer({
+        server: { middlewareMode: true },
+        appType: "spa",
+      });
+      app.use(vite.middlewares);
+    }).catch((err) => {
+      console.error("Vite server initialization error:", err);
     });
-    app.use(vite.middlewares);
-  }).catch((err) => {
-    console.error("Vite server initialization error:", err);
-  });
-} else {
-  const distPath = path.join(process.cwd(), "dist");
-  app.use(express.static(distPath));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(distPath, "index.html"));
+  } else {
+    const distPath = path.join(process.cwd(), "dist");
+    app.use(express.static(distPath));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(distPath, "index.html"));
+    });
+  }
+
+  // Start Server strictly on port 3000
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`[SEO Content Architect] Server is listening on http://0.0.0.0:${PORT}`);
   });
 }
 
-// Start Server strictly on port 3000
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`[SEO Content Architect] Server is listening on http://0.0.0.0:${PORT}`);
-});
+export default app;
