@@ -3,7 +3,6 @@
 ### AI-Powered SEO Strategy, Content Architecture & Growth Blueprint Platform
 
 <div align="center">
-  <img width="100%" alt="Pillar Architect AI Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
   <br/><br/>
   
   [![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployment-black?style=for-the-badge&logo=vercel)](https://pillararchitect.vercel.app/)
